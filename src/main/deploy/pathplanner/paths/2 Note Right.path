@@ -1,0 +1,257 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 0.84,
+        "y": 4.459858150485532
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 1.3925487974052868,
+        "y": 3.3646274984857665
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 0.9489849748930281,
+        "y": 4.331587893945019
+      },
+      "prevControl": {
+        "x": 0.6431097477579584,
+        "y": 4.93347140540435
+      },
+      "nextControl": {
+        "x": 1.2429410748507694,
+        "y": 3.753158148866884
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 2.3599577968386725,
+        "y": 4.09478126648561
+      },
+      "prevControl": {
+        "x": 1.8786109204531765,
+        "y": 4.09478126648561
+      },
+      "nextControl": {
+        "x": 3.011250767629252,
+        "y": 4.09478126648561
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 1.4127312870010371,
+        "y": 3.374494441296575
+      },
+      "prevControl": {
+        "x": 0.7974765128423825,
+        "y": 3.374494441296575
+      },
+      "nextControl": {
+        "x": 2.027986061159691,
+        "y": 3.374494441296575
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 0.84,
+        "y": 4.459858150485532
+      },
+      "prevControl": {
+        "x": 0.8207147183525153,
+        "y": 4.469725093296342
+      },
+      "nextControl": {
+        "x": 1.8294621581754118,
+        "y": 3.953618899919525
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 3.5143901057032894,
+        "y": 1.3419042222699844
+      },
+      "prevControl": {
+        "x": 2.5143901057032894,
+        "y": 1.3419042222699844
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": null
+    }
+  ],
+  "rotationTargets": [
+    {
+      "waypointRelativePos": 1.0,
+      "rotationDegrees": -57.7243556854224,
+      "rotateFast": false
+    },
+    {
+      "waypointRelativePos": 2.55,
+      "rotationDegrees": 0.0,
+      "rotateFast": true
+    },
+    {
+      "waypointRelativePos": 3,
+      "rotationDegrees": -60.0,
+      "rotateFast": true
+    },
+    {
+      "waypointRelativePos": 4,
+      "rotationDegrees": -60.0,
+      "rotateFast": true
+    }
+  ],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "Shoot",
+      "waypointRelativePos": 0.0,
+      "command": {
+        "type": "sequential",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "Speaker"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Feed",
+      "waypointRelativePos": 0.9,
+      "command": {
+        "type": "sequential",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "FeedNote"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Intake Down",
+      "waypointRelativePos": 0.0,
+      "command": {
+        "type": "sequential",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "Intake Down"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Intake",
+      "waypointRelativePos": 1.55,
+      "command": {
+        "type": "sequential",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "Intake"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Intake Stop",
+      "waypointRelativePos": 2.5,
+      "command": {
+        "type": "sequential",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "IntakeStop"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Intake Up",
+      "waypointRelativePos": 2.5,
+      "command": {
+        "type": "sequential",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "Intake Up"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "OutTake",
+      "waypointRelativePos": 3.95,
+      "command": {
+        "type": "sequential",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "OutTake"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 4.5,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 0,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": null,
+  "previewStartingState": {
+    "rotation": -59.03624346792648,
+    "velocity": 0
+  },
+  "useDefaultConstraints": true
+}
