@@ -58,6 +58,14 @@ import swervelib.telemetry.SwerveDriveTelemetry;
 import swervelib.telemetry.SwerveDriveTelemetry.TelemetryVerbosity;
 
 public class SwerveSubsystem extends SubsystemBase {
+  //Keep this in case anything happens to physical properties................................................................
+
+  /*"conversionFactor": {
+    "drive": 0.047286787200699704,
+    "angle": 16.8
+  },*/
+  
+  //.........................................................................................................................
 
   /**
    * Swerve drive object.
